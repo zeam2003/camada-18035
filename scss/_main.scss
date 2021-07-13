@@ -1,0 +1,236 @@
+.contenedorAlto {
+    width: 100%;
+    margin-top: 72px;
+}
+
+.altoMaximo1 {
+    height: 37rem;
+}
+
+.carousel-caption {
+    background: $carousel-caption;
+}
+
+.bordeInferiorNav {
+    border-bottom: 1px solid $border-color-inferior-nav;
+}
+
+.borderInferiorSeparador {
+    border-bottom: 2px solid $border-color-inferior-separador;
+}
+
+.bordeSeparadorNosotros {
+    border-bottom: 2px solid $border-color-separador-nosotros;
+}
+
+.bordeSeparadorFooter {
+    border-bottom: 2px solid $border-color-separador-footer;
+}
+
+.bordeSeparadorCopy {
+    border-top: 2px solid $border-color-separador-copy;
+}
+
+.colorVerdeTranquilo {
+    color: seagreen;
+}
+
+.colorRoyalBlue {
+    color: royalblue;
+}
+
+.colorNegro {
+    color: $font-color-black !important;
+}
+
+.margenServicios {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    h2 {
+        font-weight: $font-weight;
+    }
+    .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+    p {
+        font-family: $fuente;
+        font-size: 1rem;
+        font-weight: $font-weight;
+        line-height: 1.5;
+        color: $font-color-servicios;
+    }
+}
+
+.margenSuperior {
+    margin-top: 10px;
+}
+
+.margenInferior {
+    margin-bottom: 10px;
+}
+
+.margenIzq {
+    margin-left: 25px
+}
+
+.contactoMenuLi {
+    li {
+        list-style-type: square;
+        font-weight: $font-weight;
+        color: $font-color-list;
+        text-align: left;
+        list-style-position: inside;
+    }
+}
+
+@mixin navFont($letra, $peso) {
+    font-family: $letra;
+    font-weight: $peso;
+}
+
+.fuenteNav {
+    @include navFont($fuente, $font-weight);
+    font-size: 1rem;
+    color: royalblue;
+}
+
+.navbar-azul {
+    background-color: white;
+    & .navbar-brand {
+        color: $border-color-navbar;
+        &:hover {
+            color: $border-color-navbar;
+        }
+        &:focus {
+            color: $border-color-navbar;
+        }
+    }
+    & .navbar-nav {
+        & .nav-link {
+            font-family: $fuente;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: $font-navbar-link;
+            text-transform: uppercase;
+            &:hover {
+                color: $navbar-color-hover;
+            }
+            &:focus {
+                color: $navbar-color-hover;
+            }
+            &.disabled {
+                color: $navbar-color-disabled;
+                font-family: $fuente;
+                font-size: 1.3rem;
+                font-weight: $font-weight;
+            }
+            &.show {
+                font-family: $fuente;
+                font-size: 1.3rem;
+                font-weight: $font-weight;
+                color: white;
+                text-transform: uppercase;
+                border-radius: 5px;
+            }
+            &.active {
+                font-family: $fuente;
+                font-size: 1.3rem;
+                font-weight: $font-weight;
+                color: white;
+                text-transform: uppercase;
+                border-radius: 5px;
+            }
+        }
+        & .show> {
+            .nav-link {
+                font-family: 'Roboto', 'sans-serif';
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: white;
+                text-transform: uppercase;
+                border-radius: 5px;
+                background-color: royalblue;
+            }
+        }
+        & .active> {
+            .nav-link {
+                font-family: 'Roboto', 'sans-serif';
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: white;
+                text-transform: uppercase;
+                border-radius: 5px;
+                background-color: royalblue;
+            }
+        }
+    }
+    & .navbar-toggler {
+        color: $navbar-color-toggler;
+        border-color: $border-color;
+    }
+    & .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    & .navbar-text {
+        font-family: $fuente;
+        font-size: 1rem;
+        font-weight: $font-weight;
+        color: royalblue;
+        a {
+            color: $border-color-navbar;
+            &:hover {
+                color: $border-color-navbar;
+            }
+            &:focus {
+                color: $border-color-navbar;
+            }
+        }
+    }
+}
+
+.thumbailNosotrosRounded {
+    width: 160px;
+    aspect-ratio: 140 / 140;
+    height: 160px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.thumbailBackground {
+    @extend .thumbailNosotrosRounded;
+    background-color: $border-color-navbar;
+}
+
+.btn-royal {
+    background-color: royalblue;
+    border-color: #007bff;
+    &:hover {
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #0062cc;
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+.fadeShort {
+    @extend .fadeIn;
+    animation-duration: 1.5s;
+}
