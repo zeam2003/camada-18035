@@ -383,10 +383,10 @@
   .texto-bloque h3 span {
     color: royalblue;
   }
-  .banner-fondo1 {
-    background-image: url("../../media/ss1x760.jpg");
-    max-height: 760px;
-  }
+  /* .banner-fondo1 {
+        background-image: url("../../media/ss1x760.jpg");
+        max-height: 760px;
+    } */
 }
 
 .badge-propio {
