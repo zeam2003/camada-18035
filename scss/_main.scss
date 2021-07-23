@@ -92,7 +92,7 @@
 
 .fuenteNav {
     @include navFont($fuente, $font-weight);
-    font-size: 1rem;
+    font-size: $font-size;
     color: royalblue;
 }
 
@@ -110,12 +110,13 @@
     & .navbar-nav {
         & .nav-link {
             font-family: $fuente;
-            font-size: 1.3rem;
+            font-size: $font-size;
             font-weight: 400;
             color: $font-navbar-link;
             text-transform: uppercase;
             &:hover {
                 color: $navbar-color-hover;
+                transition: all 0.5s;
             }
             &:focus {
                 color: $navbar-color-hover;
@@ -123,12 +124,12 @@
             &.disabled {
                 color: $navbar-color-disabled;
                 font-family: $fuente;
-                font-size: 1.3rem;
+                font-size: $font-size;
                 font-weight: $font-weight;
             }
             &.show {
                 font-family: $fuente;
-                font-size: 1.3rem;
+                font-size: $font-size;
                 font-weight: $font-weight;
                 color: white;
                 text-transform: uppercase;
@@ -136,7 +137,7 @@
             }
             &.active {
                 font-family: $fuente;
-                font-size: 1.3rem;
+                font-size: $font-size;
                 font-weight: $font-weight;
                 color: white;
                 text-transform: uppercase;
@@ -145,8 +146,8 @@
         }
         & .show> {
             .nav-link {
-                font-family: 'Roboto', 'sans-serif';
-                font-size: 1.3rem;
+                font-family: $fuente;
+                font-size: $font-size;
                 font-weight: 400;
                 color: white;
                 text-transform: uppercase;
@@ -156,8 +157,8 @@
         }
         & .active> {
             .nav-link {
-                font-family: 'Roboto', 'sans-serif';
-                font-size: 1.3rem;
+                font-family: $fuente;
+                font-size: $font-size;
                 font-weight: 400;
                 color: white;
                 text-transform: uppercase;
@@ -233,4 +234,14 @@
 .fadeShort {
     @extend .fadeIn;
     animation-duration: 1.5s;
+}
+
+.fadeShort2 {
+    @extend .fadeIn;
+    animation-duration: 1s;
+}
+
+.fadeShort3 {
+    @extend .fadeIn;
+    animation-duration: 0.7s;
 }
