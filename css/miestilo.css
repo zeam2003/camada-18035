@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap");
 .contenedorAlto {
   width: 100%;
-  margin-top: 72px;
 }
 
 .altoMaximo1 {
@@ -42,6 +41,12 @@
 
 .colorNegro {
   color: #000 !important;
+}
+
+.bloque-a :hover {
+  border: 1px solid #da3e8c;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .margenServicios {
@@ -87,27 +92,12 @@
   list-style-position: inside;
 }
 
-.fuenteNav {
+.navbar-azul {
   font-family: "Lato", "sans-serif";
-  font-weight: 400;
+  font-weight: font-weight;
+  background-color: white;
   font-size: 0.938rem;
   color: royalblue;
-}
-
-.navbar-azul {
-  background-color: white;
-}
-
-.navbar-azul .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-azul .navbar-brand:hover {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-azul .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-azul .navbar-nav .nav-link {
@@ -116,6 +106,8 @@
   font-weight: 400;
   color: #484c58;
   text-transform: uppercase;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
 }
 
 .navbar-azul .navbar-nav .nav-link:hover {
@@ -283,9 +275,18 @@
   border: 1px solid #ccc;
 }
 
-.bloque-contenedor, .texto-bloque, .texto-bloque-royal, .texto-bloque-blanco, .banner-general, .margen-72, .banner-fondo1, .banner-fondo2, .banner-fondo3 {
+.bloque-contenedor, .texto-bloque, .texto-bloque-royal, .texto-bloque-blanco, .banner-general, .margen-72, .banner-fondo1, .banner-fondo2, .banner-fondo3, .banner-fondo4, .banner-fondo5 {
   padding: 80px 0px;
   background-color: white;
+}
+
+.texto-redes a {
+  font-family: "Lato", "sans-serif";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5a5a5a;
+  text-decoration: none;
 }
 
 .texto-bloque h3 {
@@ -336,6 +337,14 @@
   background-image: url("../../media/moto_bannerv3.jpg");
 }
 
+.banner-fondo4 {
+  background-image: url("../../media/servicio_bannerv2.jpg");
+}
+
+.banner-fondo5 {
+  background-image: url("../../media/nosotros_bannerv3.jpg");
+}
+
 .thead-royal {
   color: white;
   background-color: royalblue;
@@ -378,7 +387,7 @@
   .vis {
     display: none;
   }
-  .bloque-contenedor, .texto-bloque, .texto-bloque-royal, .texto-bloque-blanco, .banner-general, .margen-72, .banner-fondo1, .banner-fondo2, .banner-fondo3 {
+  .bloque-contenedor, .texto-bloque, .texto-bloque-royal, .texto-bloque-blanco, .banner-general, .margen-72, .banner-fondo1, .banner-fondo2, .banner-fondo3, .banner-fondo4, .banner-fondo5 {
     padding: 0px 0px;
     min-height: 120px;
     max-height: 150px;
@@ -395,10 +404,6 @@
   .texto-bloque h3 span {
     color: royalblue;
   }
-  /* .banner-fondo1 {
-        background-image: url("../../media/ss1x760.jpg");
-        max-height: 760px;
-    } */
 }
 
 .badge-propio {

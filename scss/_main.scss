@@ -1,6 +1,5 @@
 .contenedorAlto {
     width: 100%;
-    margin-top: 72px;
 }
 
 .altoMaximo1 {
@@ -41,6 +40,11 @@
 
 .colorNegro {
     color: $font-color-black !important;
+}
+
+.bloque-a :hover {
+    border: 1px solid rgb(218, 62, 140);
+    transition: all 1s ease-in-out;
 }
 
 .margenServicios {
@@ -90,23 +94,11 @@
     font-weight: $peso;
 }
 
-.fuenteNav {
-    @include navFont($fuente, $font-weight);
+.navbar-azul {
+    @include navFont($fuente, font-weight);
+    background-color: white;
     font-size: $font-size;
     color: royalblue;
-}
-
-.navbar-azul {
-    background-color: white;
-    & .navbar-brand {
-        color: $border-color-navbar;
-        &:hover {
-            color: $border-color-navbar;
-        }
-        &:focus {
-            color: $border-color-navbar;
-        }
-    }
     & .navbar-nav {
         & .nav-link {
             font-family: $fuente;
@@ -114,6 +106,8 @@
             font-weight: 400;
             color: $font-navbar-link;
             text-transform: uppercase;
+            padding-right: 0.8rem;
+            padding-left: 0.8rem;
             &:hover {
                 color: $navbar-color-hover;
                 transition: all 0.5s;

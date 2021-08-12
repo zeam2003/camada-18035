@@ -18,6 +18,15 @@
     background-color: white;
 }
 
+.texto-redes a {
+    font-family: $fuente;
+    font-size: 1rem;
+    font-weight: $font-weight;
+    line-height: 1.5;
+    color: $font-color-servicios;
+    text-decoration: none
+}
+
 .texto-bloque {
     @extend .bloque-contenedor;
     h3 {
@@ -77,6 +86,16 @@
 .banner-fondo3 {
     @extend .bloque-contenedor;
     background-image: url("../../media/moto_bannerv3.jpg");
+}
+
+.banner-fondo4 {
+    @extend .bloque-contenedor;
+    background-image: url("../../media/servicio_bannerv2.jpg");
+}
+
+.banner-fondo5 {
+    @extend .bloque-contenedor;
+    background-image: url("../../media/nosotros_bannerv3.jpg");
 }
 
 .thead-royal {
